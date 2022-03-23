@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>week 6 eportfolio</title>
+	<style>
+	/*
+		THIS TASK REQUIRE YOU TO USE POSITION TO MOVE ELEMENTS AND PADDING TO ACHIEVE SPACING SURROUNDING THE CONTENT
+	*/
+
+		/*ORGANIZE YOUR CSS IN THE FOLLOWING ORDER
+
+		/*1. ELEMENT SELECTOR*/
+
+		img {width: 100px; height: 100px; padding: 10px;}
+
+		p {padding: 10px; font-size: 1.2em}
+
+		h4 {position: absolute; left: 200px; z-index: 4; display: inline;}
+
+		/*2. ID SELECTOR*/
+
+		#two {left: 50px; z-index: 3;}
+		#three {left: 100px; z-index: 2;}
+		#four {left: 150px; z-index: 1;}
+
+		/*3. CLASS SELECTOR*/
+
+		.menu {height: 5vh;
+				background-color: skyblue;
+				position: sticky;
+				text-align: center;}
+
+		.container {width: 50%;
+					height: 95vh;
+					margin-left: auto;
+    				margin-right: auto;
+					overflow-y: scroll;
+					overflow-x: none;}
+
+		.stickit {position: sticky;
+				top: 0px;}
+
+		.z {position: relative;}
+
+		/*4. DESCENDENT SELECTOR*/
+		/*5. CHILD SELECTOR*/
+
+		.z > img {position: absolute;}
+
+		/*6. SIBLING SELECTOR*/
+		/*7. ATTRIBUTE SELECTOR*/
+
+		img[alt~="righty"] {float: right;}
+
+		img[alt~="lefty"] {float: left;}
+
+		/*8. PSEUDO CLASS SELECTOR*/
+
+		/*for this code below only KFC and ideal that been color lightcoral*/
+		/*.psuedo>article:nth-of-type(odd){color: lightcoral;}*/
+
+		/*for this code below only KFC and burger king that been color lightcoral*/
+		.psuedo>article:nth-child(odd){color: lightcoral;}
+
+		/*FAILURE TO COMPLY WILL RESULTS IN MARK DEDUCTION*/
+
+
+	</style>
+</head>
+<body>
+<!-- INSTRUCTIONS
+		YOU ARE NOT ALLOWED TO CHANGE ANY PART OF THE HTLM CODES (SUCH AS ADDING ID attributes or additional values to the classes atributes.) 
+	
+	YOU CAN CHANGE IMAGE SRC VALUES ONLY-->
+
+<div class="container">
+<div class="menu"><a href="#">Nav1</a> | <a href="#">Nav2</a> | <a href="#">Nav3</a> | <a href="#">Nav4</a></div>
+<p><img src="v-1.jpg" alt="righty">
+Lorem ipsum dolor sit amet consectetur adipisicing, elit. Nesciunt vero, magni natus maiores dicta laudantium harum, delectus, quia accusamus, eos fugiat nulla quidem sequi! Modi impedit vel autem quas ullam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, eveniet et fugit natus? Natus sit, eveniet rem neque perspiciatis vitae fugit ea sint, ad debitis, nostrum libero accusantium distinctio quibusdam?Lorem ipsum dolor sit amet consectetur adipisicing, elit. Dolores ipsum, accusantium officiis? Voluptatibus dignissimos ratione autem delectus ad? Maxime est quod tempore, placeat cumque suscipit ab repudiandae officiis hic deleniti.</p>
+<div class="menu stickit"><h3>Wanna see more??</h3></div>
+
+<p><img src="v-3.jpg" alt="lefty">
+Lorem ipsum dolor sit amet consectetur adipisicing, elit. Nesciunt vero, magni natus maiores dicta laudantium harum, delectus, quia accusamus, eos fugiat nulla quidem sequi! Modi impedit vel autem quas ullam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, eveniet et fugit natus? Natus sit, eveniet rem neque perspiciatis vitae fugit ea sint, ad debitis, nostrum libero accusantium distinctio quibusdam?Lorem ipsum dolor sit amet consectetur adipisicing, elit. Dolores ipsum, accusantium officiis? Voluptatibus dignissimos ratione autem delectus ad? Maxime est quod tempore, placeat cumque suscipit ab repudiandae officiis hic deleniti.</p>
+
+
+<p><img src="v-2.jpg" alt="righty">
+Lorem ipsum dolor sit amet consectetur adipisicing, elit. Nesciunt vero, magni natus maiores dicta laudantium harum, delectus, quia accusamus, eos fugiat nulla quidem sequi! Modi impedit vel autem quas ullam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, eveniet et fugit natus? Natus sit, eveniet rem neque perspiciatis vitae fugit ea sint, ad debitis, nostrum libero accusantium distinctio quibusdam?Lorem ipsum dolor sit amet consectetur adipisicing, elit. Dolores ipsum, accusantium officiis? Voluptatibus dignissimos ratione autem delectus ad? Maxime est quod tempore, placeat cumque suscipit ab repudiandae officiis hic deleniti.</p>
+
+
+<p><img src="v-4.jpg" alt="lefty">
+Lorem ipsum dolor sit amet consectetur adipisicing, elit. Nesciunt vero, magni natus maiores dicta laudantium harum, delectus, quia accusamus, eos fugiat nulla quidem sequi! Modi impedit vel autem quas ullam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, eveniet et fugit natus? Natus sit, eveniet rem neque perspiciatis vitae fugit ea sint, ad debitis, nostrum libero accusantium distinctio quibusdam?Lorem ipsum dolor sit amet consectetur adipisicing, elit. Dolores ipsum, accusantium officiis? Voluptatibus dignissimos ratione autem delectus ad? Maxime est quod tempore, placeat cumque suscipit ab repudiandae officiis hic deleniti.</p>
+
+<h3>demo between nth-child and nth-type-of - write your finding in self reflection</h3>
+
+	<!-- nth-child will select the child which is paragraph and nth-type-of matched the article element -->
+
+	<div class="psuedo">
+	<article>KFC</article>
+	<aside>McD</aside>
+	<article>Burger King</article>
+	<article>Ideal</article>
+	<aside>Jolibee</aside>
+</div>
+
+	<!-- z-index is defines the order of overlapping HTML elements. -->
+<h3>demo z-index - so what is the most important thing when using z-index? write in your reflection</h3>
+<div class="z">
+	<img src="v-2.jpg" id="two">
+	<img src="v-3.jpg" id="three">
+	<img src="v-4.jpg" id="four">
+	<h4>sample images</h4>
+</div>
+
+</div>
+</body>
+</html>
